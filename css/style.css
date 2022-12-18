@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'QuickSand', 'sans-serif';
+    list-style: none;
+    text-decoration: none !important;
+}
+
+:root {
+    --bg-color: #020312;
+    --text-color: #fff;
+    --primary-color: #eb4a4a;
+    --secondary-color: gray;
+    --h1-font: 5rem;
+    --h2-font: 3rem;
+    --h3-font: 2rem;
+    --h4-font: 1.5rem;
+    --h5-font: 1.4rem;
+    --p-font: 1rem;
+}
+
+body a {
+    color: var(--primary-color);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: sticky;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 25px 15%;
+
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+
+}
+
+.navbar a {
+    color: var(--secondary-color);
+    font-size: var(--p-font);
+    padding: 10px 25px;
+    border-radius: 0.5em;
+    transition: all .40s ease;
+}
+
+.navbar a:hover {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+section {
+    padding: 200px 15% 90px;
+}
+
+.home {
+    width: 100%;
+    height: 80vh;
+    max-width: 100%;
+    position: relative;
+    /* this 3 together */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /*and this 3 together */
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-text h4 {
+    color: var(--primary-color);
+    font-size: var(--h4-font);
+    font-weight: 600;
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+.home-text span {
+    color: var(--primary-color);
+}
+
+.home-text h3 {
+    font-size: var(--h3-font);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+section .button {
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 15px 40px;
+    border-radius: 0.8rem;
+    transition: all .40s ease;
+}
+
+.button:hover {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+}
+
+header.sticky {
+    background: var(--bg-color);
+    padding: 10px 15%;
+    border: 1px solid var(--bg-color);
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-text h4 {
+    color: var(--primary-color);
+    font-size: var(--h4-font);
+    font-weight: 600;
+}
+
+.about-text p {
+    color: var(--secondary-color);
+    font-size: var(--p-font);
+    line-height: 25px;
+    margin-bottom: 2rem;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about-features h5 {
+    font-size: var(--h5-font);
+    font-weight: 600;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.main-text h4 {
+    font-size: var(--h4-font);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.box {
+    background-color: #12141c;
+    padding: 40px;
+    border-bottom: 5px solid var(--bg-color);
+
+}
+
+.box h3 {
+    margin-top: 0.5rem;
+}
+
+.box:hover {
+    border-top: 3px solid;
+    border-top-color: var(--primary-color);
+    border-bottom: 5px solid var(--bg-color);
+    transition: all 0.40s ease;
+
+}
+
+.box:hover h3 {
+    color: var(--primary-color);
+}
+
+.box p {
+    color: var(--secondary-color);
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+/*homework starts here*/
+
+
+.portfolio .main-text h2 {
+    font-size: var(--h2-font);
+    margin-bottom: 30px;
+}
+
+.portfolio .main-text h4 {
+    font-size: 20px;
+}
+
+.portfolio-content {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    text-align: left;
+
+}
+
+.portfolio-box {
+    padding: 18px;
+    background-color: rgb(21, 27, 32);
+    border-radius: 0.5rem;
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+}
+
+.portfolio-box-text {
+    float: left;
+    color: var(--primary-color);
+    letter-spacing: 1.5px;
+}
+
+.portfolio-box-icon {
+    width: inherit;
+    float: right;
+    padding-top: 7px;
+    color: var(--text-color);
+}
+
+.portfolio-box h3 {
+    clear: both;
+    font-size: 19px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+/**/
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: top;
+    text-align: left;
+    gap: 1.5rem;
+    text-decoration: none;
+    margin-top: 4rem;
+}
+
+.contact-text {
+    margin-top: 3rem;
+}
+
+.contact h2 {
+    font-size: var(--h2-font);
+    margin-bottom: 2rem;
+}
+
+.contact h4 {
+    font-size: var(--h4-font);
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: var(--p-font);
+    color: var(--secondary-color);
+    line-height: 1.4;
+    padding-bottom: 15px;
+}
+
+.contact-data a {
+    padding-top: 8px;
+    color: var(--secondary-color);
+    display: block;
+}
+
+.contact-icons{
+    margin-top: 20%;    
+}
+
+.contact-form form input:not([type=submit]),
+.contact-form form textarea {
+    width: 100% ;    
+    height: auto;
+    padding: 10px;
+    border: none;
+    background: rgb(21, 27, 32);
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem !important;
+    border-radius: 0.8;    
+}
+
+.submit-btn {
+    width: fit-content;
+    font-size: var(--a-font);
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 15px 40px;
+    border-radius: 0.8rem;
+    transition: all .40s ease;
+}
+
+.submit-btn:hover {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.last-text {
+    padding-top: 3%;
+    padding-bottom: 30px;
+    text-align: center;
+    color: var(--secondary-color);
+}
